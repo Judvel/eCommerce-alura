@@ -1,0 +1,186 @@
+:root {
+    --blue-color: #2a7ae4;
+    --light-black-color: #464646;
+    --white-color: #ffffff;
+    --font-size: 1.4rem;
+    --gray-color: #a2a2a2;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--light-black-color);
+  }
+  
+  header {
+    display: flex;
+    max-width: 954px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+  
+  .header-container {
+    display: flex;
+  }
+  .alura-logo {
+    width: 176px;
+    height: 50px;
+    margin-right: 32px;
+  }
+  .header--input-container {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+  }
+  .header--input {
+    width: 329px;
+    font-size: var(--font-size);
+    color: var(--gray-color);
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+  }
+  .search-icon {
+    width: 17px;
+    height: 17px;
+    fill: var(--gray-color);
+  }
+
+  .header--button {
+    justify-self: end;
+    width: 180px;
+    font-size: var(--font-size);
+    background-color: var(--white-color);
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    cursor: pointer;
+  }
+  .button {
+    background-color: var(--blue-color);
+    border: none;
+    color: var(--white-color);
+    padding: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 64px 0;
+    background-color: #eaf2fd;
+  }
+  
+  .contact--list {
+    list-style: none;
+    font-size: 1.6rem;
+    
+  }
+  .contact--list li {
+    margin-bottom: 24px;
+  }
+  .contact--list li:last-child {
+    margin: 0;
+  }
+ 
+  .contact--form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    width:560px
+  }
+  
+  .form-container {
+    position: relative;
+  }
+  .form-name {
+    padding: 28px 12px 8px 12px;
+    height: 5.6rem;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    margin: 15px 0;
+  
+    font-size: 1.6rem;
+  }
+  
+  .form-name::placeholder,
+  .form-message::placeholder {
+    visibility: hidden;
+    color: #000000;
+  }
+  .form-name:focus,
+  .form-message:focus {
+    outline: none;
+  }
+  
+  .name--label {
+    position: absolute;
+    top: 3.3rem;
+    left: 1.2rem;
+    color: var(--gray-color);
+    transition: all 0.25s;
+  }
+  
+  .form-name:not(:placeholder-shown) + .name--label,
+  .form-name:focus + .name--label {
+    font-size: 1.2rem;
+  
+    top: 2.4rem;
+    color: #1d6ace;
+    transition: all 0.25;
+  }
+  
+  .form-message {
+    width: 100%;
+    height: 8.2rem;
+    padding: 28px 12px 8px 12px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    border: none;
+    resize: none;
+  }
+  .form-message:focus {
+    outline: none;
+  }
+  
+  .message--label {
+    position: absolute;
+    top: 1.5rem;
+    font-size: 1.6rem;
+    left: 1.2rem;
+    color: var(--gray-color);
+    transition: all 0.25s;
+  }
+  
+  .form-message:not(:placeholder-shown) + .message--label,
+  .form-message:focus + .message--label {
+    font-size: 1.2rem;
+    top: 1rem;
+    color: #1d6ace;
+    transition: all 0.25;
+  }
+  .form--button {
+    width: 144px;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 32px 0;
+  }
+
+  /* layout login and add product */
