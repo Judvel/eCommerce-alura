@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Alura Geek</title>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="header-container">
+        <img
+          class="alura-logo"
+          src="../../../assets/img/Logo.png"
+          alt="Logo Alura Geek"
+        />
+        <div class="header--input-container">
+          <input
+            type="text"
+            placeholder="¿Qué deseas buscar?"
+            class="header--input"
+          />
+          <?xml version="1.0" ?><svg
+            class="search-icon"
+            enable-background="new 0 0 32 32"
+            id="Glyph"
+            version="1.1"
+            viewBox="0 0 32 32"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
+              id="XMLID_223_"
+            />
+          </svg>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="login-container">
+        <h2 class="login--title">Iniciar Sesión</h2>
+        <form>
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              class="input--email input-login"
+              placeholder="email"
+              required
+              data-tipo="email"
+            />
+            <label for="email" class="email-label"
+              >Escriba su correo electrónico</label
+            >
+            <span class="message--error"></span>
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              id="password"
+              class="input--password input-login"
+              required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,12}$"
+              data-tipo="password"
+            />
+            <label for="password" class="password-label"
+              >Escriba su contraseña</label
+            >
+            <span class="message--error"></span>
+          </div>
+          <button class="button login-button" id="login-enter" type="submit">
+            Entrar
+          </button>
+        </form>
+      </section>
+      <section class="contact-container">
+        <img
+          class="alura-logo"
+          src="../../../assets/img/Logo.png"
+          alt="Logo Alura Geek"
+        />
+        <ul class="contact--list">
+          <li><a href="#">Quienes somos</a></li>
+          <li><a href="#">Politica de privacidad</a></li>
+          <li><a href="#">Programa de fidelidad</a></li>
+          <li><a href="#">Nuestras Tiendas</a></li>
+          <li><a href="#">Quiero ser franquiciado</a></li>
+          <li><a href="#">Anuncie aquí</a></li>
+        </ul>
+        <form class="contact--form" action="">
+          <h2>Hable con nosotros</h2>
+          <div class="form-container">
+            <input class="form-name" id="name" type="text" placeholder="name" />
+            <label for="name" class="name--label">Nombre</label>
+          </div>
+          <div class="form-container">
+            <textarea
+              class="form-message"
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu message"
+            ></textarea>
+            <label for="message" class="message--label"
+              >Escribe tu mensaje</label
+            >
+          </div>
+          <button class="button form--button" type="submit">
+            Enviar mensaje
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Desarrollado por Julio Diaz</p>
+      <p>2022</p>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
